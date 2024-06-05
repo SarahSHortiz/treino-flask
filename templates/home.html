@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Home - My Flask App{% endblock %}
+
+{% block content %}
+<html>
+    <head>
+        <title>
+            testezinho
+        </title>
+    </head>
+    <body>
+        <div>
+            <form method="get">
+                    1
+                <input type="text" name="primeira">
+                    2
+                <input type="text" name="segunda">
+
+                <input type="submit" value="Enviar">
+                {% if resultado %}
+                <div>
+                    {{resultado}} com média {{media}}
+                </div>
+                {% endif %}
+            </form>
+        </div>
+    </body>
+</html>
+{% endblock %}
